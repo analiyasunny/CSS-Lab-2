@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Specifying Color with RGBa, HSLa, Hexadecimal, and CSS Filters</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/base.css" rel="stylesheet">
+	<style>
+/* STEP 1: Using the color picker utility at
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool,
+set each color in hexadecimal format
+to match as closely as you can with the colors
+on the FIRST paint swatch card provided.
+-------------------------------------------------- */
+	#hex div:nth-of-type(1) {
+		background-color: #2f4f4f;
+	}
+	#hex div:nth-of-type(2) {
+		background-color: #008080;
+	}
+	#hex div:nth-of-type(3) {
+		background-color: #008b8b;
+	}
+	#hex div:nth-of-type(4) {
+		background-color: #20b2aa;
+	}
+	
+/* STEP 2: Set each color in rgba format
+to match as closely as you can with the colors
+on the SECOND paint swatch card provided.
+-------------------------------------------------- */
+	#rgba div:nth-of-type(1) {
+		background-color: rgb(59 44 68);
+		filter: hue-rotate(5deg);
+	}
+	#rgba div:nth-of-type(2) {
+		background-color: rgb(103 75 105);
+	}
+	#rgba div:nth-of-type(3) {
+		background-color: rgb(108 82 109);
+	}
+	#rgba div:nth-of-type(4) {
+		background-color: rgb(158 140 159);
+	}
+
+/* STEP 3: Set each color in hsla format
+to match as closely as you can with the colors
+on the THIRD paint swatch card provided.
+-------------------------------------------------- */
+	#hsla div:nth-of-type(1) {
+		background-color: hsl(38.11deg 95.15% 19.85%);
+		filter: hue-rotate(5deg);
+	}
+	#hsla div:nth-of-type(2) {
+		background-color: hsl(38.11deg 86.28% 28.69%);
+	}
+	#hsla div:nth-of-type(3) {
+		background-color: hsl(39.95deg 100% 36.95%);
+	}
+	#hsla div:nth-of-type(4) {
+		background-color: hsl(37deg 92% 52%);
+	}
+	/* ...and so on... */
+
+	/* STEP 4: Set each color using a CSS color keywords
+(https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
+that matches each color as closely as possible, then
+apply one or more CSS filters to see if you can
+produce an exact rendition of the swatch colors on the FOURTH card provided.
+(https://developer.mozilla.org/en-US/docs/Web/CSS/filter).
+-------------------------------------------------- */
+#keyword div:nth-of-type(1) {
+		background-color: mediumvioletred;
+		filter: hue-rotate(15deg);
+	}
+	#keyword div:nth-of-type(2) {
+		background-color:palevioletred;
+	}
+	#keyword div:nth-of-type(3) {
+		background-color: lightpink;
+		filter: hue-rotate(10deg);
+	}
+	#keyword div:nth-of-type(4) {
+		background-color: lightpink;
+		filter: hue-rotate(20deg);
+	}
+	
+	/* ...and so on... */
+
+	/* STEP 5: Describe one or more things that you can do to ensure that the colour rendering on your screen is exactly the same (or as close as possible) to the colours on your paint chip cards. If possible, attempt to do one or more of these things and describe what you did and what you found out. Maybe a screenshot, too if it might help. */
+</style>
+</head>
+
+<body>
+	<header>
+		<h1>Specifying Color <em>with</em> <abbr title="Red, Green, Blue, Alpha">RGBa</abbr>, <abbr title="Hue, Saturation, Luminousity, Alpha">HSLa</abbr>, Hexadecimal, <em>and</em> CSS Filters</h1>
+	</header>
+	<main>
+		<section id="hex">
+			<h2>Hexadecimal</h2>
+			<div>
+				<h3>Artic Pool</h3>
+			</div>
+			<div>
+				<h3>Lake Simcoe</h3>
+			</div>
+			<div>
+				<h3>Night Tides</h3>
+			</div>
+			<div>
+				<h3>Peacok's Plume</h3>
+			</div>
+		</section>
+		<section id="rgba">
+			<h2>RGB(A)</h2>
+			<div>
+				<h3>Purple Polka</h3>
+			</div>
+			<div>
+				<h3>Royal Aberdeen</h3>
+			</div>
+			<div>
+				<h3>Elevator</h3>
+			</div>
+			<div>
+				<h3>Foggy Promenade</h3>
+			</div>
+		</section>
+		<section id="hsla">
+			<h2>HSL(A)</h2>
+			<div>
+				<h3>Cigar</h3>
+			</div>
+			<div>
+				<h3>Spice Island</h3>
+			</div>
+			<div>
+				<h3>Butterscotch Tempest</h3>
+			</div>
+			<div>
+				<h3>Sun Gold</h3>
+			</div>
+		</section>
+		<section id="keyword">
+			<h2>Keyword / CSS Filter</h2>
+			<div>
+				<h3>Vibrato</h3>
+			</div>
+			<div>
+				<h3>Exotic Pink</h3>
+			</div>
+			<div>
+				<h3>Pink Angora</h3>
+			</div>
+			<div>
+				<h3>Sorbet</h3>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p><small>Colors based on CIL color paint swatch cards</small></p>
+	</footer>
+</body>
+</html>
